@@ -6,7 +6,7 @@ CNN based model for delineating the boundaries of overlapped Steatosis droplets 
 
 ## Get this repo
 ```
-git clone https://github.com/StonyBrookDB/DELINEATE.git
+git clone https://github.com/jkonglab/DELINEATE.git
 ```
 
 ### dil-Unet
@@ -17,7 +17,7 @@ git clone https://github.com/StonyBrookDB/DELINEATE.git
 
 Input image                          |  Region Prediction  
 :-----------------------------------:|:----------------------------------:
-<img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Original.png" width="200" height="180">  |  <img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Steat_region.png" width="200" height="180">
+<img src="./Images/Original.png" width="200" height="180">  |  <img src="./Images/Steat_region.png" width="200" height="180">
 
 **Usage**
 
@@ -78,7 +78,7 @@ The dataset (https://figshare.com/s/d75b129d969b4f463168) is created for region 
 
 Input image                          |    Boundary Detection  
 :-----------------------------------:|:----------------------------------:
-<img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Original.png" width="200" height="180">  |  <img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Steat_boundary.png" width="200" height="180">
+<img src="./Images/Original.png" width="200" height="180">  |  <img src="./Images/Steat_boundary.png" width="200" height="180">
 
 **Usage**
 
@@ -91,7 +91,7 @@ export OMP_NUM_THREADS=1
 
 **Setting up**
 
-- First step is to edit the [config file](https://github.com/StonyBrookDB/DELINEATE/tree/master/HNN/holy-edge/hed/configs/hed.yaml) located at `hed/configs/hed.yaml`.
+- First step is to edit the [config file](https://github.com/jkonglab/DELINEATE/tree/master/HNN/holy-edge/hed/configs/hed.yaml) located at `hed/configs/hed.yaml`.
 
 Set the paths below. Make sure the directories exist and you have read/write permissions on them.
 The HNN model is trained on (https://figshare.com/s/381f3c0200c87cae259e) dataset generated from Whole-slide images of liver tissue.
@@ -134,7 +134,7 @@ feh <test_output>
 
 Region Pediction           |  Boundary Detection       |    Final Prediction
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Steat_region.png" width="200" height="180">  |  <img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Steat_boundary.png" width="200" height="180"> | <img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Steat_finalPred.png" width="200" height="180">
+<img src="./Images/Steat_region.png" width="200" height="180">  |  <img src="./Images/Steat_boundary.png" width="200" height="180"> | <img src="./Images/Steat_finalPred.png" width="200" height="180">
 
 - The region and boundary predictions are combined and used to generate the final steatosis prediction using FCN-8s model.
 The net produces pixel-wise clasiification similar to thesize of the image with the value of each pixel corresponding to its class (Figure right) where three classes corresponds to the backgorund, steatosis boundary and region pixel.
