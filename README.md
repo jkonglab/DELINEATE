@@ -17,7 +17,7 @@ git clone https://github.com/StonyBrookDB/DELINEATE.git
 
 Input image                          |  Region Prediction  
 :-----------------------------------:|:----------------------------------:
-<img src="https://github.com/jkonglab/DELINEATE/master/Images/Original.png" width="200" height="180">  |  <img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Steat_region.png" width="200" height="180">
+<img src="./Images/Original.png" width="200" height="180">  |  <img src="https://github.com/StonyBrookDB/DELINEATE/blob/master/Images/Steat_region.png" width="200" height="180">
 
 **Usage**
 
