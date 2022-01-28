@@ -178,3 +178,6 @@ TESTING:
 
 ## Reference:
 Mousumi Roy, Fusheng Wang, Hoang Vo, Dejun Teng, George Teodoro, Alton B. Farris, Eduardo Castillo Leon, Miriam B. Vose, Jun Kong, “Deep Learning Based Accurate Hepatic Steatosis Quantification for Histological Assessment of Liver Biopsies,” Lab Investigation - Nature, 100:1367-1383, 2020.
+
+## License
+This tool is available under the GNU General Public License (GPL) (https://www.gnu.org/licenses/gpl-3.0.en.html) and the LGPL (https://www.gnu.org/licenses/lgpl-3.0.en.html).
